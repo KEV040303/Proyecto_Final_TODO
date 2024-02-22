@@ -1,0 +1,170 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 105, 243);
+    border-radius: 10px
+}
+
+#titulo {
+    text-align: center;
+}
+
+#contenedor {
+    width: 40%;
+    margin-left: 30%;
+    min-width: 200px;
+}
+
+.boton {
+    border: none;
+    background-color: white;
+    width: 90px;
+    padding: 1% 0;
+    margin: 0 6%;
+    border-bottom: solid 2px rgb(255, 255, 255);
+    transition-duration: 0.5s;
+}
+
+.boton:hover {
+    cursor: pointer;
+    border-bottom: solid 2px rgb(0, 105, 243);
+}
+
+.boton:focus {
+    border-bottom: solid 2px rgb(0, 105, 243);
+}
+
+#botones {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulario {
+    display: flex;
+}
+
+#taskInput {
+    width: 75%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+    padding: 2% 1%;
+    transition-duration: 0.5s;
+}
+
+#addTaskButton {
+    width: 20%;
+    margin-left: 5%;
+    color: white;
+    background-color: rgb(0, 105, 243);
+    border: 1px solid rgb(0, 105, 243);
+    border-radius: 7px;
+    padding: 2% 1%;
+    transition-duration: 0.5s;
+}
+
+#addTaskButton:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(0, 105, 243);
+    transform: scale(1.05);
+}
+
+#taskInput:hover {
+    cursor: text;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+#taskInput:focus {
+    cursor: text;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+#taskList {
+    list-style-type: none;
+    margin: 0;
+    padding: 2% 0;
+}
+
+li {
+    padding: 1% 0;
+}
+
+li:hover {
+    cursor: default;
+}
+
+li>input[type="checkbox"] {
+    transform: scale(1.5);
+    transition-duration: 0.5s;
+}
+
+li>input[type="checkbox"]:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transform: scale(1.7);
+}
+
+li>#eliminarTarea {
+    float: right;
+    color: rgba(0, 0, 0, 0.3);
+    background-color: white;
+    border: none;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+li>#eliminarTarea:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+li>#botonEditar {
+    float: right;
+    color: rgba(0, 0, 0, 0.3);
+    background-color: white;
+    border: none;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+li>#botonEditar:hover {
+    cursor: pointer;
+    transform: scale(1.4);
+}
+
+#deleteCompletedButton {
+    float: right;
+    width: 30%;
+    color: white;
+    background-color: rgba(202, 48, 48, 0.993);
+    border: 1px solid rgba(202, 48, 48, 0.993);
+    border-radius: 7px;
+    padding: 2% 1%;
+    min-width: 90px;
+    transition-duration: 0.5s;
+}
+
+#deleteCompletedButton:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(202, 48, 48, 0.993);
+    transform: scale(1.05);
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
